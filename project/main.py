@@ -42,5 +42,5 @@ api.add_resource(Users, '/users/<string:sayi>')
 api.add_resource(Name, '/isim/<string:name>')
 
 if __name__ == '__main__':
-   app.run(host="0.0.0.0", port=80)
+   app.run(host="0.0.0.0", port=8000)
    app.run()
