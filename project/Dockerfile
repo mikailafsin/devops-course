@@ -1,5 +1,5 @@
 # pull official base image
-FROM python:3.11
+FROM python:3.11.3-slim-buster
 
 # set work directory
 WORKDIR /usr/src/app
@@ -15,3 +15,5 @@ RUN pip install -r requirements.txt
 
 # copy project
 COPY . /usr/src/app/
+
+CMD ["python", "main.py"]
